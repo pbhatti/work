@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Parul Bhatti - numberz</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="images/th_favicon_green.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+
+<body>
+    <!--------------------------------------------------SCRIPT STARTS HERE----------------------------------
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('.main_gallery').flickity({
+                    cellAlign: 'center',
+                    contain: true,
+                    freeScroll: true,
+                    lazyLoad: 1,
+                    imagesLoaded: true
+                });
+                //your code here
+            });
+        })(jQuery)
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(document).on("scroll", onScroll);
+
+            //smoothscroll
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+                $(document).off("scroll");
+
+                $('a').each(function () {
+                    $(this).removeClass('active');
+                })
+                $(this).addClass('active');
+
+                var target = this.hash,
+                    menu = target;
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top + 2
+                }, 1000, 'swing', function () {
+                    window.location.hash = target;
+                    $(document).on("scroll", onScroll);
+                });
+            });
+        });
+
+        function onScroll(event) {
+            var scrollPos = $(document).scrollTop();
+            $('#sidenav a').each(function (i) {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                    $('#sidenav ul li a').removeClass("active");
+                    currLink.addClass("active");
+                }
+                else {
+                    currLink.removeClass("active");
+                }
+            });
+        }
+    </script> ------------------------>
+
+    <!--------------------------------------------------SCRIPT ENDS HERE--------------------------------
+    <div id="sidenav" class="visible sidenav">
+        <ul>
+            <li><a href="#numberz" class="navlink scroll active navlink_title">numberz (2017-18)</a></li>
+            <li><a href="#cashflow" class="navlink scroll">Cashflow Management</a></li>
+            <li><a href="#ar" class="navlink scroll">Account Receivable</a></li>
+            <li><a href="#guidelines" class="navlink scroll"> nu UI Guidelines</a></li>
+        </ul>
+    </div> -------------------------->
+    
+    <div class="page_wrapper" id="flipkart" id="scroll">
+        <!-- HOME PAGE CONTAINER STARTS -->
+        <main class="content">
+            <header class="container topbar">
+                <!-- HEADER CONTAINER STARTS -->
+                <div class="hero_img" style="width:56px; height:50px"></div>
+                <div class="next_project">
+                    <div class="next_icon"></div>
+                    <div class="project_group">
+                        <div class="project_title">Flipkart</div>
+                        <div class="project_time">2013-15</div>
+                    </div>
+                </div>
+            </header><!-- HEADER CONTAINER ENDS -->
+
+            <div class="project project_3">
+                <!------------------------------------ PROJECT - FULL WIDTH STARTS ------------------------->
+                <div class="mini_container column_container section-1">
+                    <div class="intro_title">Flipkart</div>
+                    <p>At Flipkart, I was part of the team focussed on building post-purchase customer experience.
+                        We designed & shipped order management to help customers Track, Return/Replace & Cancel order themselves on consumer app. 
+                        We were the first Indian e-commerce startup to launch the self serve order management for consumer early in 2013.</p>
+                    <div class="info">
+                        <p class="sub_info"><span style="font-weight: bold">Role:&nbsp </span> Interaction Design - level II </p>
+                        <p class="sub_info"><span style="font-weight: bold">Duration:&nbsp </span> 2013-15</p>
+                    </div>
+                </div>
+                <div class="container project_thumbnail section_2 mb20 mt50">
+                    <img src="Images/flipkart_thumbnail.png" class="image" alt="">
+                </div>
+                <div id="cashflow" class="mini_container column_container section_3">
+                    <div class="section_title mt150">Designing ‘return & cancel’ order experience</div>
+                    <p span style="font-weight: bold">Business goal (PHASE-1)</p>          
+                    <p>Reduce post-purchase customer calls to enquire on ‘how to return, refund & cancel order’.</p> 
+                    <br>
+                    <p span style="font-weight: bold">Customer goal</p> 
+                    <p>Empower customers to manage their orders themselves i.e. inititiate return & cancel both on mobile & web.</p> 
+                    <br>
+                    <p span style="font-weight: bold">Success Metrics</p>
+                    <p>- % reduction in customer service calls for post-purchase concerns.</p>
+                    <p>- % increase in online order management activities across platform: no of order returns/replacements/exchange & cancel.</p>       
+
+                    <div class="info">
+                        <p class="sub_info"><span style="font-weight: bold">Contributors:&nbsp </span> Interaction Designer (myself) & Visual Designer </p>                       
+                    </div>
+                    <div class="user_journey">
+                        <div><p span style="font-weight: bold">High level customer journey</p></div>
+                        <div class="purchase mt10">
+                            <ul>
+                                <li class="purchase_title">PRE-PURCHASE</li>
+                                <li>Browsing & omparing products</li>
+                                <li>Reading reviews</li>
+                                <li>Exploring new products</li>
+                                <li>Looking for deals & offers</li>
+                            </ul>
+                            <ul>
+                                <li class="purchase_title">DURING PURCHASE</li>
+                                <li>Understanding the product</li>
+                                <li>Comparing products</li>
+                                <li>Shortlising products</li>
+                                <li>Decision making</li>
+                                <li>Payment & Checkout</li>
+                            </ul>
+                            <ul>
+                                <li class="purchase_title">POST-PURCHASE</li>
+                                <li>Tracking order details</li>
+                                <li>Order Management (return & cancel)</li>
+                                <li>Contacting customer support</li>
+                                <li>Help</li>
+                            </ul> 
+                        </div>                     
+                    </div>
+                </div>
+                <div class="full_container section_4 mt50">
+                    <div class="horizontal_scrolling_wrapper">
+                        <img src="Images/return.png" class="" alt="">
+                    </div>
+                </div>
+
+                <div class="mini_container section_5 mt150 mb30">
+                    <div class="para_title">Feature discoverability issues</div>
+                    <p>While we shipped the ability to Track, Return and Cancel orders online, the flipkart customers still continued to call customer support (CS) 
+                        for help with these actions. As per CS call data the maximum calls were on:</p>
+                    <p>Track Order CS calls: <span style="font-family: Lato-Italic">’Whats going on with my order?’</span></p>
+                    <p>Track Order CS calls: <span style="font-family: Lato-Italic"></span>’Whats going on with my order?’</span></p>
+                    <p>Return Order CS calls: <span style="font-family: Lato-Italic"></span>’How do i return this order?’</span></p>
+                </div>
+
+                <div class="container section_6 mb100 mt30">
+                    <img src="Images/calldata.png" class="image" alt="">
+                    <!--- <p class="image_label">Snippets of user workflows used for brainstorm, apart from whiteboarding solutions with founders, 
+                        design & tech team.</p> --->
+                </div>
+
+                <div class="mini_container section_7 mt150 mb30">
+                        <div class="para_title">Identify customer touchpoints</div>
+                        <p>Built a user journey map to identify touchpoints in web, msite & mobile app to improve discoverability of 
+                        post-purchase features.</p>
+                    </div>
+    
+                    <div class="container section_8 mb100 mt30">
+                        <img src="Images/userjourney.png" class="image" alt="">
+                        <!--- <p class="image_label">Snippets of user workflows used for brainstorm, apart from whiteboarding solutions with founders, 
+                            design & tech team.</p> --->
+                    </div>
+                    <div class="container section_9 mt100 mb100">
+                        <div class="special_title mb30">BUSINESS GOAL PHASE-2 </div>
+                        <div class="center_section">
+                            <p style="font-weight:bold; font-size: 1.125rem; text-align: center">Improve discoverability and drive adoption of post-purchase, self-service features. 
+                                <br>Reduce customer calls by x%</p>
+                        </div>
+                        <p style="text-align: center; padding: 0 100px; " class="mt20">In most of the design solutioning (as shown below) my approach was not to change anything fundamental.
+                        But to make superficial changes to improve discoverability. 
+                        The focus was on educating people and bringing them up to speed to start using the features.</p>
+                    </div>
+                    
+                    <div class="container row_container section_10 mb70 mt70"> 
+                        <div class="leftcontent_section">
+                            <div class="para_title">Re-designed Post-delivery SMS</div>
+                            <p> We switched to rich-text sms to help customers track their order via:
+                                get order status sms - for without internet mobile users
+                                URL link - direct to msite track order page for internet enabled mobile users 
+                                Also, used sms to collect feedback on post purchase experience  to improve the service.</p>
+                            <p span style="font-weight: bold" class="mt20">Business goal (PHASE-1)</p>          
+                            <p>- In the first month of launch, the average click through rate (CTR) of Track Order URLs in SMS performed better 
+                                in metro cities which has more mobile internet users.</p>
+                            <p>- Overall, the CTR was on 19% for URL in SMS, compared to just 4.2% for Emails.</p>
+                        </div>
+                        <div class="rightimg_section">
+                            <img src="Images/sms.png" class="image">
+                        </div>
+                    </div>
+
+                    <div class="container row_container section_11 mb70 mt70"> 
+                        <div class="rightcontent_section">
+                            <div class="para_title">Proposed track order widget on homepage</div>
+                            <p> The following proposal wasn’t considered as this was one of the most revenue generating touchpoints on homepage, 
+                                reserved only for Offers & Deals showcase.
+                            </p>
+                        </div>
+                        <div class="leftimg_section">
+                            <img src="Images/trackwidget.png" class="image">
+                        </div>
+                    </div>
+
+                    <div class="container row_container section_12 mb70 mt70"> 
+                        <div class="leftcontent_section">
+                            <div class="para_title">Search with ‘track order id’ capability</div>
+                            <p> As per data Flipkart’s prominent search bar served as the fastest route to discovery for users on home page. 
+                                Hence, I proposed on leveraging this touchpoint to enable user to track their order. </p>
+                        </div>
+                        <div class="rightimg_section">
+                            <img src="Images/search.png" class="image">
+                        </div>
+                    </div>
+
+                    <div class="container row_container section_13 mb70 mt70"> 
+                        <div class="rightcontent_section">
+                            <div class="para_title">Guide customers on where to manage their orders on web & mobile</div>
+                            <br>
+                            <p span style="font-weight: bold; color: #F54B5E">Problem</p> 
+                            <p> On interviewing and talking to several customers we concluded that after placing their order they didn’t know it 
+                                can be tracked, cancelled or returned from My Order page. Many of them were also anxious about the next steps on their 
+                                order delivery.
+                            </p>
+                            <br>
+                            <p> On web confirmation page customers were certainly missing the Track Order message & link to My Order page 
+                                and same for mobile </p>
+                        </div>
+                        <div class="leftimg_section">
+                            <img src="Images/order_live.png" class="image">
+                        </div>
+                    </div>
+
+                    <div class="container row_special_container section_14 mb70"> 
+                        <div class="rightcontent_section">
+                            <p span style="font-weight: bold; color: #09B954">Solution</p> 
+                            <p> We introduced infograph on order deilvery process and placed it upfront. As per our findings from user 
+                                testing the hierachy of this communication on web & mobile worked effectively in communicating the process. 
+                            </p>
+                            <br>
+                            <p> We also introduced ‘Track, Cancel & Return’ message strip & card with big, clear CTA to guide user to My Order page.</p> 
+                            <div style="width: 70%;" class="mt50">
+                                <img src="Images/track.png" class="image">
+                            </div>         
+                        </div>
+                        <div class="leftimg_section">
+                            <img src="Images/order_redesigned.png" class="image">
+                        </div>
+                    </div>
+
+                    <div class="container row_container section_15 mb70 mt70"> 
+                        <div class="leftcontent_section">
+                            <div class="para_title">Improvements in Customer Care Page</div>
+                            <br>
+                            <p span style="font-weight: bold; color: #F54B5E">Problem</p> 
+                            <p> As per data, users were ignoring self-serve actions for Track, Cancel & Return related issues 
+                                and were instead going to email & chat to report the following: </p>
+                            <p style="font-family: Lato-Italic">’How do I cancel my order?’</p>
+                            <p style="font-family: Lato-Italic">’How do I get Invoice for my order?’</p>
+                            <p style="font-family: Lato-Italic">’How do I return?’</p>
+                            <p> On investigating further we realized many didn’t notice these buttons placed in proximity to large Email & Chat 
+                                clickable cards and few didn’t understand the purpose of these buttons.</p>
+                            <br>
+                            <p span style="font-weight: bold; color: #09B954">Solution</p> 
+                            <p> We prioritized self-serve actions by incorporating them in a clickable card with big icons so that they are hard to miss.</p>
+                            <p> The micro-copy was re-worked to following :</p>
+                            <p>- A changed section heading ‘Get assistance’ to ‘Take Action or Get Assistance’ to communicate the ’self-serve’ purpose</p>    
+                            <p>- Introduced title text above self-serve CTAs to address user’s concerns.</p> 
+                        </div>
+
+                        <div class="rightimg_section">
+                            <img src="Images/customercare.png" class="image">
+                        </div>
+                    </div>  
+            </div>
+            <!--------------------------------------------------- PROJECT - FULL WIDTH STARTS --------------------------------->
+
+            <footer class="project_4 mb30 mt30">
+                <!-- FOOTER CONTAINER STARTS -->
+                <div class="name section_1">Parul Bhatti, Bangalore &nbsp &nbsp</div>
+                <div class="nav section_2">
+                    <ul class="hero_contact">
+                        <li><a class="contact">Email</a></li>
+                        <li><a class="contact">Instagram</a></li>
+                        <li><a class="contact">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer_message section_3 mt20">This website is handcoded with love. Open for Feedback :)</div>
+            </footer><!-- FOOTER CONTAINER ENDS -->
+        </main>
+    </div><!-- HOME PAGE CONTAINER ENDS -->
+</body>
+
+
+</html>

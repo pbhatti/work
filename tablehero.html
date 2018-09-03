@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Parul Bhatti - Tablehero</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="images/th_favicon_green.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+
+<body>
+    <!--------------------------------------------------SCRIPT STARTS HERE---------------------------------------------------------->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('.main_gallery').flickity({
+                    cellAlign: 'center',
+                    contain: true,
+                    freeScroll: true,
+                    lazyLoad: 1,
+                    imagesLoaded: true
+                });
+                //your code here
+            });
+        })(jQuery)
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(document).on("scroll", onScroll);
+
+            //smoothscroll
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+                $(document).off("scroll");
+
+                $('a').each(function () {
+                    $(this).removeClass('active');
+                })
+                $(this).addClass('active');
+
+                var target = this.hash,
+                    menu = target;
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top + 2
+                }, 1000, 'swing', function () {
+                    window.location.hash = target;
+                    $(document).on("scroll", onScroll);
+                });
+            });
+        });
+
+        function onScroll(event) {
+            var scrollPos = $(document).scrollTop();
+            $('#sidenav a').each(function (i) {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                    $('#sidenav ul li a').removeClass("active");
+                    currLink.addClass("active");
+                }
+                else {
+                    currLink.removeClass("active");
+                }
+            });
+        }
+    </script>
+
+    <!--------------------------------------------------SCRIPT ENDS HERE---------------------------------------------------------->
+    <div id="sidenav" class="visible sidenav">
+        <ul>
+            <li><a href="#tablehero" class="navlink scroll active navlink_title">Tablehero (2015-17)</a></li>
+            <li><a href="#Reservations" class="navlink scroll">Reservations</a></li>
+            <li><a href="#Sites" class="navlink scroll">Sites</a></li>
+            <li><a href="#Orders" class="navlink scroll">Orders</a></li>
+        </ul>
+    </div>
+
+    <div class="page_wrapper" id="tablehero" id="scroll">
+        <!-- HOME PAGE CONTAINER STARTS -->
+        <main class="content">
+            <header class="container topbar">
+                <!-- HEADER CONTAINER STARTS -->
+                <div class="hero_img" style="width:56px; height:50px"></div>
+                <div class="next_project">
+                    <div class="next_icon"></div>
+                    <div class="project_group">
+                        <a href="/flipkart.html">
+                            <div class="project_title">Flipkart</div>
+                            <div class="project_time">2013-15</div>
+                        </a>
+                    </div>
+                </div>
+            </header><!-- HEADER CONTAINER ENDS -->
+
+            <div class="project project_2">
+                <!------------------------------------ PROJECT - FULL WIDTH STARTS ------------------------->
+                <div class="mini_container column_container section-1">
+                    <div class="intro_title">Tablehero</div>
+                    <p>At Tablehero I was part of the three-member design & product team, responsible for designing the business
+                        management toolkit for mom & pop restaurants in the US. I was tasked with conceptualizing the product
+                        from grounds up, detailing out user workflows, building & testing concepts using low & high fidelity
+                        prototypes and executing pixel perfect front-end development of a few workflows</p>
+                    <div class="info">
+                        <p class="sub_info"><span style="font-weight: bold">Role:&nbsp </span>Snr. Product Designer</p>
+                        <p class="sub_info"><span style="font-weight: bold">Duration:&nbsp </span>2016 - 18</p>
+                        <p class="sub_info"><span style="font-weight: bold">More on:&nbsp </span><a href="https://blog.tablehero.com/tablehero-who-we-are-and-what-were-up-to-f211b6ed0beb"
+                                target="_blank" style="border-bottom: 1px #333 dashed; color: #333">Medium</a></p>
+                    </div>
+                </div>
+                <div class="container project_thumbnail section_2 mt30">
+                    <img src="Images/tablehero_thumbnail.png" class="image" alt="">
+                </div>
+
+                <div id="Reservations" class="mini_container column_container section_3">
+                    <div class="section_title mt150">Reservations | ipad app</div>
+                    <p>The brief was to build a simple reservation & waitlist management app which helps restauranter manage
+                        their diners better. We kept it lightweight with no feature bloat. The focus was on solving for the
+                        core user needs first, i.e., a simple onboarding, restaurant set-up, table management & guest book
+                        that even the most low-tech owners could use</p>
+
+                    <div class="target_title">Target customers</div>
+                    <p>The target customers were the mom and pop establishments who manages a full-service dining room of
+                        any size using pen-and-paper and don’t want to be held hostage by expensive & complicated solutions
+                        available in the market like Yelp and OpenTable.</p>
+
+                    <div class="info">
+                        <p class="sub_info"><span style="font-weight: bold">Contributors:&nbsp </span> 2 Product Designers
+                        </p>
+                        <p class="sub_info"><span style="font-weight: bold">More on:&nbsp </span>
+                            <a href="https://www.producthunt.com/posts/tablehero-2" target="_blank" style="border-bottom: 1px #333 dashed; color: #333">Product
+                                Hunt
+                            </a> &nbsp&nbsp.&nbsp&nbsp
+                            <a href="https://blog.tablehero.com/tablehero-reservations-bc3c8e39e768" target="_blank" style="border-bottom: 1px #333 dashed; color: #333">Medium</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main_gallery section_3 mb50">
+                    <!-- FULL WIDTH SCROLL START -->
+                    <div class="gallery_cell">
+                        <img src="Images/res_1.png" class="image" alt="">
+                    </div>
+                    <div class="gallery_cell">
+                        <img src="Images/res_2.png" class="image" alt="">
+                    </div>
+                    <div class="gallery_cell">
+                        <img src="Images/res_3.png" class="image" alt="">
+                    </div>
+                </div> <!-- FULL WIDTH SCROLL ENDS -->
+
+                <div class="container row_container section_4 mt150">
+                    <div class="leftimg_section" style="margin-right: 20px; background-color: #fafafa; width: 570px; height: 720px; justify-content: center; align-content: center; align-items: center;">
+                        <video muted autoplay loop style="width:500px;">
+                            <!-- MP4 must be first for iPad! -->
+                            <source src="Videos/TableZoom.mp4" type="video/mp4" />
+                            <!-- Safari / iOS video    -->
+                            <source src="Videos/TableZoom.mp4" type="video/ogg" />
+                            <!-- Firefox / Opera / Chrome10 -->
+                            <!-- fallback to Flash: -->
+                            <object width="640" height="360" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+                                <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+                                <param name="movie" value="__FLASH__.SWF" />
+                                <param name="flashvars" value="autostart=true&amp;controlbar=over&amp;image=__POSTER__.JPG&amp;file=../Videos/TableZoom.mp4"
+                                />
+                                <!-- fallback image. note the title field below, put the title of the video there -->
+                                <img src="Images/1.png" width="640" height="360" alt="__TITLE__" title="No video playback capabilities, please download the video below"
+                                />
+                            </object>
+
+                        </video>
+                    </div>
+
+                    <div class="rightimg_section" style="margin-left: 20px;  background-color: #fafafa; width: 570px; height: 720px; justify-content: center; align-content: center; align-items: center;">
+                        <video muted autoplay loop style="width:500px;">
+                            <!-- MP4 must be first for iPad! -->
+                            <source src="Videos/ListSwipe.mp4" type="video/mp4" />
+                            <!-- Safari / iOS video    -->
+                            <source src="Videos/ListSwipe.OGV" type="video/ogg" />
+                            <!-- Firefox / Opera / Chrome10 -->
+                            <!-- fallback to Flash: -->
+                            <object width="640" height="360" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+                                <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+                                <param name="movie" value="__FLASH__.SWF" />
+                                <param name="flashvars" value="autostart=true&amp;controlbar=over&amp;image=__POSTER__.JPG&amp;file=../Videos/ListSwipe.mp4"
+                                />
+                                <!-- fallback image. note the title field below, put the title of the video there -->
+                                <img src="Images/1.png" width="640" height="360" alt="__TITLE__" title="No video playback capabilities, please download the video below"
+                                />
+                            </object>
+                        </video>
+                    </div>
+                </div>
+                <div class="container row_container section_5 mt20 mb150">
+                    <div class="leftimg_section">
+                        <p class="image_label">Pinch & Zoom to view to get the full room view.</p>
+                    </div>
+                    <div class="rightimg_section">
+                        <p class="image_label">Used Contextual Swipe to reveal key reservation actions.</p>
+                    </div>
+                </div>
+
+                <div class="container section_6 mb100">
+                    <img src="Images/Tags.png" class="image" alt="">
+                    <!--- <p class="image_label">Snippets of user workflows used for brainstorm, apart from whiteboarding solutions with founders, 
+                        design & tech team.</p> --->
+                </div>
+            </div>
+            <!--------------------------------------------------- PROJECT - FULL WIDTH STARTS --------------------------------->
+
+            <div class="project project_sep project_2" id="Sites">
+                <!------------------------------------ PROJECT - FULL WIDTH STARTS ------------------------->
+                <div class="mini_container column_container section_1 mt150">
+                    <div class="section_title">Sites | web app</div>
+                    <p>The objective was to enable small business owners to build their website as fast as possible and keep
+                        it ‘very beginner-friendly’. The solution we arrived at was an automated website builder that pulls
+                        content either from the business’s existing website or any other online presence into a mobile-friendly
+                        & responsive template in just one click! Sounds like magic?
+                        <a href="https://www.tablehero.com/sites" target="_blank" style="border-bottom: 1px #333 dashed; color: #333">Try
+                            it yourself!</a></p>
+
+                    <div class="target_title">Target customers</div>
+                    <p>The target customers were small local business owners. To start with, we targeted mom & pop restaurants
+                        who are resistive of high budget, clunky website builder with complex editors that required heavy
+                        duty & time consuming content uploads.</p>
+
+                    <div class="info">
+                        <p class="sub_info"><span style="font-weight: bold">Contributors:&nbsp </span> 2 Product Designers
+                        </p>
+                        <p class="sub_info"><span style="font-weight: bold">More on:&nbsp </span><a href="https://www.producthunt.com/posts/tablehero"
+                                target="_blank" style="border-bottom: 1px #333 dashed; color: #333">Product Hunt</a></p>
+                    </div>
+                </div>
+                <div class="full_container section_2 mt50">
+                    <img src="Images/sites.png" class="image">
+                    <p class="image_label mt20">Letting restauranteur find their restaurant on the landing page and view
+                        their website before signup was an instant sell.
+                        <br>This straightforward and fastest onboarding helped us convert visitors into customers quickly.
+                    </p>
+                </div>
+
+                <div class="container row_container section_3 mt150">
+                    <div class="leftimg_section" style="margin-right: 10px;">
+                        <video muted autoplay loop style="height: 450px;">
+                            <!-- MP4 must be first for iPad! -->
+                            <source src="Videos/ChangeTemplate.mp4" type="video/mp4" />
+                            <!-- Safari / iOS video    -->
+                            <source src="Videos/ChangeTemplate.mp4" type="video/ogg" />
+                            <!-- Firefox / Opera / Chrome10 -->
+                            <!-- fallback to Flash: -->
+                            <object width="640" height="360" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+                                <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+                                <param name="movie" value="__FLASH__.SWF" />
+                                <param name="flashvars" value="autostart=true&amp;controlbar=over&amp;image=__POSTER__.JPG&amp;file=../Videos/ChangeTemplate.mp4"
+                                />
+                                <!-- fallback image. note the title field below, put the title of the video there -->
+                                <img src="Images/1.png" width="640" height="360" alt="__TITLE__" title="No video playback capabilities, please download the video below"
+                                />
+                            </object>
+
+                        </video>
+                    </div>
+
+                    <div class="rightimg_section" style="margin-left: 10px;">
+                        <video muted autoplay loop style="height: 450px;">
+                            <!-- MP4 must be first for iPad! -->
+                            <source src="Videos/PhotoViewer.mp4" type="video/mp4" />
+                            <!-- Safari / iOS video    -->
+                            <source src="Videos/PhotoViewer.mp4" type="video/ogg" />
+                            <!-- Firefox / Opera / Chrome10 -->
+                            <!-- fallback to Flash: -->
+                            <object width="640" height="360" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+                                <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+                                <param name="movie" value="__FLASH__.SWF" />
+                                <param name="flashvars" value="autostart=true&amp;controlbar=over&amp;image=__POSTER__.JPG&amp;file=../Videos/PhotoViewer.mp4"
+                                />
+                                <!-- fallback image. note the title field below, put the title of the video there -->
+                                <img src="Images/1.png" width="640" height="360" alt="__TITLE__" title="No video playback capabilities, please download the video below"
+                                />
+                            </object>
+                        </video>
+                    </div>
+                </div>
+
+                <div class="container row_container section_4 mt20">
+                    <div class="leftimg_section">
+                        <p class="image_label">Easy to use website customisations on mobile.</p>
+                    </div>
+                    <div class="rightimg_section">
+                        <p class="image_label">Photo gallery ux on mobile</p>
+                    </div>
+                </div>
+
+                <div class="full_container row_container section_5 mt200">
+                    <div class="rightcontent_section">
+                        <div class="para_title">Photo & Review Manager</div>
+                        <p>Sites source photos & reviews about customer’s restuarant from web. Customer can either select
+                            credited photos & reviews or can add their own using Photo & Review Manager.</p>
+                        <br>
+                        <p class="label mt10">Photo Manager (Top left): Select photos of your resturant to showcase in your
+                            photo section on front page.</p>
+                        <br>
+                        <p class="label mt10">Review Manager (Bottom right): Select reviews & portion of the selected review
+                            to showcase in your review section on front page.</p>
+                    </div>
+                    <div class="leftimg_section">
+                        <img src="Images/photomanager.png" class="image">
+                    </div>
+                </div>
+
+                <div class="full_container row_container section_6 mt200">
+                    <div class="leftcontent_section">
+                        <div class="para_title">‘Rise’ - Template Design</div>
+                        <p>Rise is a fashion-forward, ultra-clean template, designed to give the restaurant website a modern
+                            and approachable feel. I used primary & bold hues on actionable & modern sans-serif typeface,
+                            along with a sleek & compact theme to put the content front and center.</p>
+                        <br>
+                        <p>Sites offered more than 20 beautiful, responsive & free website templates, all based on different
+                            themes, designed by various designers.</p>
+                    </div>
+                    <div class="rightimg_section">
+                        <img src="Images/rise.png" class="image">
+                    </div>
+                </div>
+
+                <div class="full_container section_7 mb100 mt200">
+                    <img src="Images/templates.png" class="image">
+                    <p class="image_label mt20">I designed color schemes for all templates. These templates come with a unique
+                        theme: a set of color, icons, buttons & UI interaction.
+                        <br>Different designers designed & developed these templates.</p>
+                </div>
+            </div>
+            <!--------------------------------------------------- PROJECT - FULL WIDTH STARTS --------------------------------->
+
+            <div id="Orders" class="project project_sep project_2">
+                <!------------------------------------ PROJECT - FULL WIDTH STARTS ------------------------->
+                <div class="mini_container column_container section_1">
+                    <div class="section_title mt150">Orders | web app</div>
+                    <p>To enable restaurant owners to take online takeout orders on their websites. We designed a readily
+                        insertable, fully responsive orderable menu widget. It comes in different templates/colors, giving
+                        restaurant owner flexibility to select & match it to their existing website theme. The widget comes
+                        with a orders & revenue management dashboard.</p>
+
+                    <div class="target_title">Target customers</div>
+                    <p>The target customers were restaurant owners who wanted to get rid of pdf menus on their website or
+                        were stuck with a non-responsive webpage; as a result, losing on the untapped mobile customer base.
+                    </p>
+                    <div class="info">
+                        <p class="sub_info"><span style="font-weight: bold">Contributors:&nbsp </span> 2 Product Designers
+                        </p>
+                    </div>
+                </div>
+                <div class="full_container section_2 mb50 mt50">
+                    <img src="Images/Orders.png" class="image">
+                </div>
+            </div>
+            <!--------------------------------------------------- PROJECT - FULL WIDTH STARTS --------------------------------->
+
+            <footer class="project_4 mb30">
+                <!-- FOOTER CONTAINER STARTS -->
+                <div class="name section_1">Parul Bhatti, Bangalore &nbsp &nbsp</div>
+                <div class="nav section_2">
+                    <ul class="hero_contact">
+                        <li><a class="contact">Email</a></li>
+                        <li><a class="contact">Instagram</a></li>
+                        <li><a class="contact">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer_message section_3 mt20">This website is handcoded with love. Open for Feedback :)</div>
+            </footer><!-- FOOTER CONTAINER ENDS -->
+        </main>
+    </div><!-- HOME PAGE CONTAINER ENDS -->
+</body>
+
+
+</html>
