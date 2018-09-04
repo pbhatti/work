@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Parul Bhatti - Dribbble</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="images/th_favicon_green.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+     <!-- jQuery  -->
+     <script src="http://code.jquery.com/jquery.js"></script>
+     <!-- jRibbble -->
+     <script src="js/jquery.jribbble.js"></script>
+     <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+</head>
+
+<body>
+    <!--------------------------------------------------SCRIPT STARTS HERE---------------------------------------------------------->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('.main_gallery').flickity({
+                    cellAlign: 'center',
+                    contain: true,
+                    freeScroll: true,
+                    lazyLoad: 1,
+                    imagesLoaded: true
+                });
+                //your code here
+            });
+        })(jQuery)
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(document).on("scroll", onScroll);
+
+            //smoothscroll
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+                $(document).off("scroll");
+
+                $('a').each(function () {
+                    $(this).removeClass('active');
+                })
+                $(this).addClass('active');
+
+                var target = this.hash,
+                    menu = target;
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top + 2
+                }, 1000, 'swing', function () {
+                    window.location.hash = target;
+                    $(document).on("scroll", onScroll);
+                });
+            });
+        });
+
+        function onScroll(event) {
+            var scrollPos = $(document).scrollTop();
+            $('#sidenav a').each(function (i) {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                    $('#sidenav ul li a').removeClass("active");
+                    currLink.addClass("active");
+                }
+                else {
+                    currLink.removeClass("active");
+                }
+            });
+        }
+    </script>
+
+    <!--------------------------------------------------SCRIPT ENDS HERE---------------------------------------------------------->
+    <div class="page_wrapper" id="Dribbble" id="scroll">
+        <!-- HOME PAGE CONTAINER STARTS -->
+        <main class="content">
+            <header class="container topbar">
+                <!-- HEADER CONTAINER STARTS -->
+                <a href="index.html"><div class="hero_img" style="width:56px; height:50px"></div></a>
+                <a href="flipkart.html">
+                    <div class="next_project">
+                        <div class="next_icon"></div>
+                        <div class="project_group">  
+                            <div class="project_title">Flipkart</div>
+                            <div class="project_time">2013-15</div>           
+                        </div>
+                    </div>
+                </a>
+            </header><!-- HEADER CONTAINER ENDS -->
+
+            <div class="project project_4">
+                    <blockquote class="embedly-card"><h4><a href="https://dribbble.com/pa_rulz">parul bhatti</a></h4><p>Designer . 80's kid . In love with everything Japanese</p></blockquote>
+                    
+            </div>
+
+            <footer class="project_4 mb30">
+                <!-- FOOTER CONTAINER STARTS -->
+                <div class="name section_1">Parul Bhatti, Bangalore &nbsp &nbsp</div>
+                <div class="nav section_2">
+                    <ul class="hero_contact">
+                        <li><a href="mailto:parul.bhatti@gmail.com?Subject=Hello" target="_top" class="contact">Email</a></li>
+                        <li><a href="https://www.instagram.com/pin_bubble/" target="_blank" class="contact" >Instagram</a></li>
+                        <li><a href="https://twitter.com/parul_bhatti" target="_blank" class="contact">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer_message section_3 mt20">This website is handcoded with love. Open for Feedback :)</div>
+            </footer><!-- FOOTER CONTAINER ENDS -->
+        </main>
+    </div><!-- HOME PAGE CONTAINER ENDS -->
+
+   
+</body>
+
+<script type="text/javascript">
+    $('.dribbble-feed').hide();
+    jQuery(window).load(function(){
+    $('.dribbble-feed').fadeIn();
+    });
+    $.jribbble.getShotsByPlayerId('pa_rulz', function (playerShots) {
+    var html = [];
+
+    $.each(playerShots.shots, function (i, shot) {
+        html.push('<li><h3>' + shot.title + '</h3>');
+        html.push('<h4>by ' + shot.player.name + '</h4><a href="' + shot.url + '">');
+        html.push('<img src="' + shot.image_teaser_url + '" ');
+        html.push('alt="' + shot.title + '"></a></li>');
+    });
+
+    $('#shotsByPlayerId').html(html.join(''));
+    }, {page: 1, per_page: 10});
+
+</script>
+
+
+</html>
