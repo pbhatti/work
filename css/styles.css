@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
 *,
 *:after,
 *:before {
@@ -365,13 +366,15 @@ header.hero {
     flex-direction: column;
 }
 .intro_title {
-    font-family: 'Lato-Black';
+    font-family: 'Lato';
+    font-weight: 900;
     font-size: 2.5rem;
     letter-spacing: 0.47px;
     margin-bottom: 0.9375rem;
 }
 p {
-    font-family: 'Lato-Regular';
+    font-family: 'Lato';
+    font-weight: 400;
     font-size: 1rem;
     color: #333;
     letter-spacing: 0.3px;
@@ -393,21 +396,21 @@ p {
 }
 
 .section_title {
-    font-family: 'Lato-Regular';
+    font-family: 'Lato';
     font-weight: 900;
     font-size: 1.3125rem;
     margin-bottom: 0.9375rem;
 }
 
 .para_title {
-    font-family: 'Lato-Regular';
+    font-family: 'Lato';
     font-weight: 700;
     font-size: 1.125rem;
     margin-bottom: 0.625rem;
 }
 
 .target_title {
-    font-family: 'Lato-Bold';
+    font-family: 'Lato';
     font-weight: 700;
     font-size: 1rem;
     margin-bottom: 0.625rem;
@@ -560,7 +563,7 @@ p {
 }
 
 .image_label {
-    font-family: 'Lato-Regular';
+    font-family: 'Lato';
     font-weight: 400;
     font-size: 0.875rem;
     color: #637282;
@@ -573,7 +576,7 @@ p {
 }
 
 .label {
-    font-family: 'Lato-Regular';
+    font-family: 'Lato';
     font-weight: 400;
     font-size: 0.875rem;
     color: #637282;
@@ -688,7 +691,7 @@ footer .name {
     display: flex;
     justify-content: center;
     align-content: center;
-    font-family: 'Lato-Regular';
+    font-family: 'Lato';
     font-weight: 700;
     font-size: 	0.875rem;
     line-height: 1.625rem; 
@@ -708,7 +711,7 @@ footer .nav {
     align-content: center;
     color: #637282;
     font-size: 0.6875rem;
-    font-family: 'Lato-Light';
+    font-family: 'Lato';
 }
 
 
@@ -818,8 +821,8 @@ footer .nav {
 }
 
 .navlink_title {
-    font-family: 'Lato-Bold' !important;
-    font-weight: 700;
+    font-family: 'Lato' 
+    font-weight: 700 !important;
     font-size: 12px;
     color: #637282;
     letter-spacing: 0;
@@ -841,7 +844,7 @@ footer .nav {
 }
 
 .special_title {
-    font-family: 'Lato-Regular';
+    font-family: 'Lato';
     font-weight: 400;
     font-size: 14px;
     color: #637282;
@@ -863,7 +866,7 @@ footer .nav {
 .key {
     display: flex;
     flex-direction: row;
-    font-family: 'Lato-Bold';
+    font-family: 'Lato';
     font-weight: 700;
     font-size: 1rem;
     color: #333;
@@ -896,7 +899,7 @@ footer .nav {
     font-size: 	0.75rem;
     display: flex;
     flex-direction: row;
-    font-family: 'Lato-Bold';
+    font-family: 'Lato';
     font-weight: 700; 
     letter-spacing: 0.125rem;
 }
