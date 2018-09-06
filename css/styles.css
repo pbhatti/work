@@ -58,6 +58,9 @@ a:hover {
     order: 1;
 }
 @media only screen and (min-width: 1021px){
+    body {
+        overflow-x: hidden;
+    }
     .container, .project_container {
         width: 1180px;
     }
@@ -77,6 +80,9 @@ a:hover {
     .web_hide {
         display: none !important;
     }
+    body {
+        overflow-x: hidden;
+    }
 }
 
 /* iphone 6/7/8 */
@@ -85,6 +91,10 @@ a:hover {
   and (max-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
+
+    body {
+        overflow-x: hidden;
+    }
 
     .nav {
         padding-top: .625rem;
