@@ -128,11 +128,6 @@ a:hover {
 
 }
 
-
-
-.page_wrapper {
-    /* background-color: greenyellow;*/
-}
 .nav {
     order: 1;
     /* background-color: rebeccapurple; */
@@ -831,7 +826,7 @@ footer .nav {
 }
 
 .navlink_title {
-    font-family: 'Lato' 
+    font-family: 'Lato';
     font-weight: 700 !important;
     font-size: 12px;
     color: #637282;
@@ -900,9 +895,6 @@ footer .nav {
     border: #637282 solid 1px;
     border-radius: 3px;
     padding: 1.25rem 1.25rem;
-}
-
-.purchase ul {
 }
 
 .purchase_title {
