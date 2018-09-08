@@ -126,6 +126,10 @@ a:hover {
         width: 340px;
     }
 
+  .project {
+        width: 340px !important;
+        padding: 0 10px;
+    }
 }
 
 .nav {
