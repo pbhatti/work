@@ -158,6 +158,18 @@ a:hover {
         padding-top: 30px;
         padding-right: 0px !important;
     }
+
+    #cashflow .section_title, #ar .section_title, #guidelines .section_title, #numberz .section_6, 
+    #numberz .section_7, #numberz .section_9, #numberz .section_5 {
+        margin-top: 4.375rem !important;
+    }
+    #numberz .section_10 {
+        margin-bottom: 4.375rem !important;
+    }
+    #numberz .section_12 p {
+        margin-top: 0 !important;
+    }
+
 }
 
 .nav {
@@ -905,10 +917,11 @@ footer .nav {
 .special_title {
     font-family: 'Lato';
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #637282;
     letter-spacing: 2.8px;
     text-align: center;
+    line-height: 1.375rem;
 }
 
 .center_section {
