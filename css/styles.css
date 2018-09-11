@@ -126,11 +126,11 @@ a:hover {
         width: 340px;
     }
 
-    .project {
+    .project, .project .section_1, .project .section_3 {
         width: 340px !important;
         /* padding: 0 10px; */
     }
-    #numberz {
+    #numberz, #tablehero, #flipkart {
         overflow-x: hidden;
     }
     .row_container {
@@ -160,7 +160,7 @@ a:hover {
     }
 
     #cashflow .section_title, #ar .section_title, #guidelines .section_title, #numberz .section_6, 
-    #numberz .section_7, #numberz .section_9, #numberz .section_5 {
+    #numberz .section_7, #numberz .section_9, #numberz .section_5, #Reservations .section_title {
         margin-top: 4.375rem !important;
     }
     #numberz .section_10 {
