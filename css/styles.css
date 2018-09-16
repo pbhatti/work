@@ -117,9 +117,8 @@ a:hover {
     .grid {
         margin-top: 3.125rem !important;
     }
-    .container, .project_container {
+    .container, .project_container, .full_container, p {
         width: 340px;
-        margin: 0 20px;
     }
 
     .project_card, .project_thumbnail {
@@ -141,15 +140,19 @@ a:hover {
         align-items: center;
     }
     
-    .leftimg_section {
+    .leftimg_section, .rightimg_section {
         /*background-color: #0070E0;*/
         display: flex;
         flex-direction: column;
         order: 2 !important;
+        width: 100% !important;
+        margin: 0 0 !important;
+    }
+    #numberz .leftimg_section {
         width: 70% !important;
     }
     
-    .rightcontent_section {
+    .rightcontent_section, .leftcontent_section {
         display: flex;
         order: 1 !important;
         flex-direction: column;
@@ -157,17 +160,31 @@ a:hover {
         width: 100% !important;
         padding-top: 30px;
         padding-right: 0px !important;
+        padding-left: 0px !important;
+        width: 340px !important;
     }
 
     #cashflow .section_title, #ar .section_title, #guidelines .section_title, #numberz .section_6, 
-    #numberz .section_7, #numberz .section_9, #numberz .section_5, #Reservations .section_title {
+    #numberz .section_7, #numberz .section_9, #numberz .section_5, 
+    #tablehero .section_title, #tablehero Reservations .section_3, #tablehero .section_4, #tablehero .section_5, #tablehero .section_6, 
+    #tablehero .section_7, #tablehero .section_8 {
         margin-top: 4.375rem !important;
+    }
+    #tablehero .section_3 {
+        margin-top: 0 !important;
     }
     #numberz .section_10 {
         margin-bottom: 4.375rem !important;
     }
     #numberz .section_12 p {
         margin-top: 0 !important;
+    }
+    #tablehero .section_4 .rightimg_section {
+        height: auto !important;
+        margin-top: 4.375rem !important;
+    }
+    #tablehero .section_4 .leftimg_section {
+        height: auto !important;
     }
 
 }
@@ -489,6 +506,10 @@ p {
     margin-top: 1.875rem;
 }
 
+#tablehero .section_4 video {
+    width: 340px;
+}
+
 
 .mt250 {
     margin-top: 15.625rem;
@@ -504,6 +525,9 @@ p {
 }
 .mt200 {
     margin-top: 12.5rem;
+}
+.mt300 {
+    margin-top: 18.75rem;
 }
 .mt150 {
     margin-top: 9.375rem;
@@ -713,6 +737,7 @@ p {
     padding-right: 100px;
     padding-left: 100px;
 }
+
 .row_container .rightimg_section {
     /*background-color: #0070E0;*/
     display: flex;
@@ -739,8 +764,24 @@ p {
     align-items: top;
     padding-right: 100px;
 }
-
-
+#tablehero .section_4 .leftimg_section {
+    margin-right: 20px;
+    background-color: #fafafa;
+    width: 570px;
+    height: 720px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#tablehero .section_4 .rightimg_section {
+    margin-left: 20px;
+    background-color: #fafafa;
+    width: 570px;
+    height: 720px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
 .image {
     width: 100% ;
     height: 100%;
@@ -787,7 +828,7 @@ footer .nav {
 
 
 .main_gallery {
-    height: 700px;
+    /*height: 700px;*/
     padding-top: 50px;
     width: 100vw;
 }
