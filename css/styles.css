@@ -500,12 +500,14 @@ p {
     font-weight: 900;
     font-size: 1.3125rem;
     margin-bottom: 0.9375rem;
+    line-height: 1.75rem;
 }
 
 .para_title {
     font-family: 'Lato';
     font-weight: 700;
     font-size: 1.125rem;
+    line-height: 1.5rem;
     margin-bottom: 0.625rem;
 }
 
@@ -1090,6 +1092,10 @@ footer .nav {
     -webkit-overflow-scrolling: touch;
 }
 
+.quote_txt {
+    font-family: Lato-Italic; 
+    color: #FFA113;
+}
 
 
 
