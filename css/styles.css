@@ -117,7 +117,7 @@ a:hover {
     .grid {
         margin-top: 3.125rem !important;
     }
-    .container, .project_container, .full_container, p {
+    .container, .project_container, .full_container, .mini_container, p {
         width: 340px;
     }
 
