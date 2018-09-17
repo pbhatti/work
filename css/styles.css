@@ -118,15 +118,15 @@ a:hover {
         margin-top: 3.125rem !important;
     }
     .container, .project_container, .full_container, .mini_container, p {
-        width: 340px;
+        width: 320px;
     }
 
     .project_card, .project_thumbnail {
-        width: 340px;
+        width: 320px;
     }
 
     .project, .project .section_1, .project .section_3 {
-        width: 340px !important;
+        width: 320px !important;
         /* padding: 0 10px; */
     }
     #numberz, #tablehero, #flipkart {
@@ -161,7 +161,7 @@ a:hover {
         padding-top: 30px;
         padding-right: 0px !important;
         padding-left: 0px !important;
-        width: 340px !important;
+        width: 320px !important;
     }
 
     #cashflow .section_title, #ar .section_title, #guidelines .section_title, #numberz .section_6, 
@@ -195,7 +195,7 @@ a:hover {
     #flipkart .section_12 .rightimg_section, #flipkart .section_13 .leftimg_section,
     #flipkart .section_14 .leftimg_section, #flipkart .section_15 .rightimg_section {
         padding-top: 1.875rem !important;
-        width: 340px !important;
+        width: 320px !important;
     }
 
 }
@@ -518,7 +518,7 @@ p {
 }
 
 #tablehero .section_4 video {
-    width: 340px;
+    width: 320px;
 }
 
 .mt300 {
