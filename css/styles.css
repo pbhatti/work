@@ -167,7 +167,8 @@ a:hover {
     #cashflow .section_title, #ar .section_title, #guidelines .section_title, #numberz .section_6, 
     #numberz .section_7, #numberz .section_9, #numberz .section_5, 
     #tablehero .section_title, #tablehero Reservations .section_3, #tablehero .section_4, #tablehero .section_5, #tablehero .section_6, 
-    #tablehero .section_7, #tablehero .section_8 {
+    #tablehero .section_7, #tablehero .section_8, #flipkart .section_5, #flipkart .section_7, #flipkart .section19, #flipkart .section_10,
+    #flipkart .section_11, #flipkart .section_12, #flipkart .section_13, #flipkart .section_14, #flipkart .section_15 {
         margin-top: 4.375rem !important;
     }
     #tablehero .section_3 {
@@ -185,6 +186,16 @@ a:hover {
     }
     #tablehero .section_4 .leftimg_section {
         height: auto !important;
+    }
+    #flipkart .section_9 p {
+        padding: 0 !important;
+    }
+
+    #flipkart .section_10 .rightimg_section, #flipkart .section_11 .leftimg_section, 
+    #flipkart .section_12 .rightimg_section, #flipkart .section_13 .leftimg_section,
+    #flipkart .section_14 .leftimg_section, #flipkart .section_15 .rightimg_section {
+        padding-top: 1.875rem !important;
+        width: 340px !important;
     }
 
 }
@@ -510,7 +521,9 @@ p {
     width: 340px;
 }
 
-
+.mt300 {
+    margin-top: 18.75rem;
+}
 .mt250 {
     margin-top: 15.625rem;
 }
@@ -696,7 +709,7 @@ p {
     display: flex;
     flex-direction: row;
     /*background-color: chocolate;*/
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -1038,6 +1051,26 @@ footer .nav {
     font-family: 'Lato';
     font-weight: 700; 
     letter-spacing: 0.125rem;
+}
+
+.purchase_mob {
+    font-size: 	0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: #637282 solid 1px;
+    border-radius: 3px;
+    padding: 1.25rem 1.25rem;
+}
+
+.purchase_title_mob {
+    font-size: 	0.75rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato';
+    font-weight: 700; 
+    letter-spacing: 0.125rem;
+    padding-top: 1.25rem;
 }
 
 .horizontal_scrolling_wrapper {
