@@ -197,6 +197,10 @@ a:hover {
         padding-top: 1.875rem !important;
         width: 320px !important;
     }
+    #numberz .section_6 video {
+        width: 320px;
+        height: auto !important;
+    }
 
 }
 
