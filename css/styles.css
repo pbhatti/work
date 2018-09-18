@@ -150,6 +150,10 @@ a:hover {
     }
     #numberz .leftimg_section {
         width: 70% !important;
+        align-items: center;
+    }
+    #numberz .section_6 .rightcontent_section {
+        padding-bottom: 1.875rem;
     }
     
     .rightcontent_section, .leftcontent_section {
