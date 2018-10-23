@@ -16,7 +16,7 @@
 
 html,
 body {
-    color:#333;
+    color:#57586E;
     font-weight: 400;
     font-size: 1rem;
     font-family: 'Lato', 'sans-serif', 'Open Sans';
@@ -27,9 +27,13 @@ body {
     overflow-x: none;
 }
 
+.titleColor {
+    color: #101131;
+}
+
 a {
     text-decoration: none;
-    color: #333; 
+    color: #101131;
 }
 a:hover {
     color: #0070E0;
@@ -98,8 +102,9 @@ a:hover {
 
     .nav {
         padding-top: .625rem;
-        margin-bottom: 1.25rem !important;
+        margin-bottom: 1.875rem !important;
     }
+
     .hero_name {
         font-size: 1.875rem !important;
         line-height: 1.3em !important;
@@ -112,7 +117,10 @@ a:hover {
         justify-content: flex-start !important;
     }
     header.hero {
-        height: 350px !important;
+        padding: 0 30px;
+    }
+    .home .container {
+        margin-top: 4.375rem !important;
     }
     .grid {
         margin-top: 3.125rem !important;
@@ -209,10 +217,10 @@ a:hover {
 }
 
 .nav {
-    order: 1;
+    order: 2;
     /* background-color: rebeccapurple; */
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 ul.hero_contact {
@@ -220,7 +228,7 @@ ul.hero_contact {
     padding: 0px;
     margin: 0px;
     cursor: pointer;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 ul {
     list-style: none;
@@ -233,6 +241,7 @@ ul.hero_contact li {
     line-height: 24px;
     margin-right: 8px;
 }
+
 
 ul.hero_contact li:hover {
     color: #0070E0;
@@ -252,6 +261,14 @@ header.hero {
 
 .hero_wrapper {
     margin-top: 3.125rem;
+    display: flex;
+    order: 1;
+    width: 1180px;
+    flex-direction: row; 
+    flex-wrap:  wrap;
+    /*margin: 3.125rem 0;*/
+    /*background-color: cornflowerblue;*/
+    justify-content: space-between;
 }
 
 .hero_img {
@@ -267,7 +284,7 @@ header.hero {
     font-family: 'Lato';
     font-weight: 900;
     font-size: 2.5rem;
-    color: #333;
+    color: #101131;
     letter-spacing: 0.3px;
     line-height: 1.5em;
 }
@@ -329,6 +346,7 @@ header.hero {
     flex-direction: column;
     font-size: 0.875rem;
     padding-right: 52.5rem;
+    color: #57586E;
 }
 
 .project_title {
@@ -338,6 +356,7 @@ header.hero {
     line-height: 1.375rem;
     display: flex;
     order: 1;
+    color: #101131;
 }
 
 .project_time {
@@ -345,6 +364,7 @@ header.hero {
     font-size: 0.875rem;
     display: flex;
     font-family: 'Lato';
+    color: #101131;
 }
 
 .home .project_title {
@@ -473,12 +493,13 @@ header.hero {
     font-size: 2.5rem;
     letter-spacing: 0.47px;
     margin-bottom: 0.9375rem;
+    color: #101131;
 }
 p {
     font-family: 'Lato';
     font-weight: 400;
     font-size: 1rem;
-    color: #333;
+    color: #57586E;
     letter-spacing: 0.3px;
     line-height: 2rem !important;
 }
@@ -509,6 +530,7 @@ p {
     font-size: 1.3125rem;
     margin-bottom: 0.9375rem;
     line-height: 1.75rem;
+    color: #101131;
 }
 
 .para_title {
@@ -517,6 +539,7 @@ p {
     font-size: 1.125rem;
     line-height: 1.5rem;
     margin-bottom: 0.625rem;
+    color: #101131;
 }
 
 .target_title {
@@ -525,6 +548,7 @@ p {
     font-size: 1rem;
     margin-bottom: 0.625rem;
     margin-top: 1.875rem;
+    color: #101131;
 }
 
 #tablehero .section_4 video {
@@ -672,7 +696,7 @@ p {
 }
 
 .full_container {
-    width: 100vw;
+    /*width: 100vw;*/
     display: flex;
     flex-direction: row; 
     flex-wrap:  wrap;
@@ -830,6 +854,7 @@ footer .name {
     font-weight: 700;
     font-size: 	0.875rem;
     line-height: 1.625rem; 
+    color: #101131;
     /*background-color: #637282;*/
 }
 
@@ -844,7 +869,7 @@ footer .nav {
     display: flex;
     justify-content: center;
     align-content: center;
-    color: #637282;
+    color: ##57586E;
     font-size: 0.6875rem;
     font-family: 'Lato';
 }
@@ -959,7 +984,7 @@ footer .nav {
     font-family: 'Lato';
     font-weight: 700 !important;
     font-size: 12px;
-    color: #637282;
+    color: #57586E;
     letter-spacing: 0;
     line-height: 26px;
     padding-left: 20px;
@@ -969,7 +994,7 @@ footer .nav {
 
 .navlink {
     font-size: 12px;
-    color: #637282;
+    color: #57586E;
     letter-spacing: 0;
     opacity: .8;
     line-height: 26px;
@@ -982,7 +1007,7 @@ footer .nav {
     font-family: 'Lato';
     font-weight: 400;
     font-size: 0.875rem;
-    color: #637282;
+    color: #101131;
     letter-spacing: 2.8px;
     text-align: center;
     line-height: 1.375rem;
@@ -1005,7 +1030,7 @@ footer .nav {
     font-family: 'Lato';
     font-weight: 700;
     font-size: 1rem;
-    color: #333;
+    color: #101131;
     letter-spacing: 0;
     line-height: 1.5rem !important;
     text-align: left;
@@ -1030,7 +1055,7 @@ footer .nav {
     font-family: 'Lato';
     font-weight: 700;
     font-size: 1rem;
-    color: #333;
+    color: #101131;
     letter-spacing: 0;
     line-height: 1.5rem !important;
     padding-bottom: 1.25rem; 
