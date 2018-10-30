@@ -15,12 +15,13 @@
 }
 
 html,
-body {
+body, p {
     color:#57586E;
     font-weight: 400;
     font-size: 1rem;
     font-family: 'Lato', 'sans-serif', 'Open Sans';
     letter-spacing: 0.3px;
+    line-height: 1.375rem;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -238,8 +239,8 @@ ul {
 ul.hero_contact li {
     display: inline-block;
     padding: 0px;
-    line-height: 24px;
-    margin-right: 8px;
+    line-height: 1.5rem;
+    margin-right: .5rem;
 }
 
 
@@ -298,7 +299,8 @@ header.hero {
     font-family: 'Lato';
     font-weight: 700;
     font-size: .75rem;
-    color: #B0B0B0;
+    color: #637282;
+    opacity: .6;
     letter-spacing: 2.71px;
     text-transform: uppercase;
     padding-bottom: 20px;
@@ -327,11 +329,28 @@ header.hero {
 
 .project_card .project_thumbnail img:hover {
     -webkit-transform: scale(1.05);
-	transform: scale(1.05);
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .project_card:hover {
-    color: #0070E0;
+    color: #0070E0 !important;
+    cursor: pointer;
+}
+
+.project_card:hover .project_title {
+    color: #0070E0 !important;
+    cursor: pointer;
+}
+
+.project_card:hover .project_time {
+    color: #0070E0 !important;
+    cursor: pointer;
+}
+
+.project_card:hover p {
+    color: #0070E0 !important;
+    cursor: pointer;
 }
 
 .project_thumbnail {
@@ -345,7 +364,6 @@ header.hero {
     display: flex;
     flex-direction: column;
     font-size: 0.875rem;
-    padding-right: 52.5rem;
     color: #57586E;
 }
 
@@ -397,12 +415,6 @@ header.hero {
     line-height: 1.1875rem;
 }
 
-.project_desc {
-    line-height: 22px;
-    font-size: 0.875rem;
-    display: flex;
-    order: 2;
-}
 
 .project_description .project_title {
     font-family: 'Lato';
@@ -869,7 +881,8 @@ footer .nav {
     display: flex;
     justify-content: center;
     align-content: center;
-    color: #57586E;
+    color: #637282;
+    opacity: .6;
     font-size: 0.6875rem;
     font-family: 'Lato';
 }
