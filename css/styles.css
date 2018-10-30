@@ -145,7 +145,7 @@ a:hover {
     }
 
     .project_card, .project_thumbnail {
-        width: 320px;
+        width: 320px !important;
     }
 
     .project_card p {
