@@ -86,7 +86,7 @@ a:hover {
         display: none !important;
     }
     body {
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
 }
 
@@ -98,7 +98,7 @@ a:hover {
   and (orientation: portrait) { 
 
     body {
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
 
     .nav {
