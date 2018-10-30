@@ -729,6 +729,7 @@ header.hero p {
     /*margin: 3.125rem 0;*/
     /*background-color: cornflowerblue;*/
     justify-content:center;
+    width: 100vw;
 }
 
 .image_label {
