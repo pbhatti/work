@@ -87,6 +87,7 @@ a:hover {
     }
     body {
         overflow-x: hidden !important;
+        max-width: 100%;
     }
 }
 
@@ -99,6 +100,7 @@ a:hover {
 
     body {
         overflow-x: hidden !important;
+        max-width: 100%;
     }
 
     .nav {
