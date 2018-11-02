@@ -37,7 +37,7 @@ a {
     color: #101131;
 }
 a:hover {
-    color: #0070E0;
+    color: #0070E0 !important;
 }
 .page_wrapper {
     display: flex;
@@ -481,12 +481,17 @@ header.hero p {
     margin-right: 10px;
 }
 
-.next_project:hover {
-    color: #0070E0;
+.next_project:hover .project_time {
+    color: #0070E0 !important;
     cursor: pointer;
 }
 
-.next_icon:hover {
+.next_project:hover .project_title {
+    color: #0070E0 !important;
+    cursor: pointer;
+}
+
+.next_project:hover .next_icon {
     display: flex;
     width: 16px;
     height: 12px;
