@@ -341,6 +341,24 @@ header.hero p {
     flex-direction: column;
 }
 
+.project_thumbnail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+    flex-wrap: wrap;
+}
+.illusCard {
+    box-shadow:  0 0 50px 0 rgba(0,0,0,0.10);
+    border-radius: 4px;
+    border: 10px solid #fff;
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    margin: 0 30px;
+}
+
 /* micro interactions*/
 .project_card .project_thumbnail img {
     -webkit-transform: scale(1);
@@ -354,24 +372,22 @@ header.hero p {
     transform: scale(1.05);
     cursor: pointer;
 }
-
-.project_card:hover {
-    color: #0070E0 !important;
+.project_card a:hover {
     cursor: pointer;
 }
 
-.project_card:hover .project_title {
-    color: #0070E0 !important;
+.project_card a:hover .project_title {
+    color: #0070E0;
     cursor: pointer;
 }
 
-.project_card:hover .project_time {
-    color: #0070E0 !important;
+.project_card a:hover .project_time {
+    color: #0070E0;
     cursor: pointer;
 }
 
-.project_card:hover p {
-    color: #0070E0 !important;
+.project_card a:hover p {
+    color: #0070E0;
     cursor: pointer;
 }
 
