@@ -147,6 +147,7 @@ a:hover {
 
     .project_card, .project_thumbnail {
         width: 320px !important;
+        border-radius: 4px !important;
     }
 
     .project_card p {
@@ -349,6 +350,7 @@ header.hero p {
     align-items: center;
     background-color: #FAFAFA;
     flex-wrap: wrap;
+    border-radius: 4px !important;
 }
 .illusCard {
     box-shadow:  0 0 50px 0 rgba(0,0,0,0.10);
@@ -396,6 +398,7 @@ header.hero p {
     order: 1;
     display: flex;
     overflow: hidden;
+    border-radius: 4px !important;
 }
 
 .project_description {
