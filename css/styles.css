@@ -345,7 +345,7 @@ header.hero p {
     /* background-color: aqua; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
