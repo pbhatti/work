@@ -938,6 +938,7 @@ header.hero p {
     z-index: 3 !important;
 }
 
+/* added new class */
 .imageAuto {
     width: 100% ;
     height: auto;
