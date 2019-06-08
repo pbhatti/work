@@ -178,6 +178,7 @@ a:hover {
         width: 100% !important;
         margin: 0 0 !important;
     }
+
     #numberz .leftimg_section {
         width: 70% !important;
         align-items: center;
@@ -930,6 +931,16 @@ header.hero p {
 .image {
     width: 100% ;
     height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3 !important;
+}
+
+.imageAuto {
+    width: 100% ;
+    height: auto;
     top: 0;
     bottom: 0;
     left: 0;
